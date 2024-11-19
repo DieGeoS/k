@@ -471,41 +471,40 @@
 
         <div class="row gy-4">
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="forms/contact.php" method="post" class="php-email-form" enctype="multipart/form-data" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Tu nombre" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Tu Numero Telefónico" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Cuéntanos Sobre Tu Proyecto" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <div>
-                    <br>
-                    <p>Subir su archivo DXF</p>
-                    <input type="file" name="pdfFile" accept="application/pdf">
+          
+                  <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                   </div>
-                  <br>
-                  <button type="submit">Enviar</button>
-                </div>
-
+          
+                  <div class="col-md-6">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+          
+                  <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+          
+                  <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                  </div>
+          
+                  <div class="col-md-12">
+                      <p>Upload your file:</p>
+                      <input type="file" name="pdfFile" accept="application/pdf, .doc, .docx, .jpeg, .jpg, .png">
+                  </div>
+          
+                  <div class="col-md-12 text-center">
+                      <div class="loading">Cargando</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Mensaje enviado correctamente</div>
+                      <button type="submit">Enviar mensaje </button>
+                  </div>
+          
               </div>
-            </form>
+          </form>
+          
           </div>
           <div class="col-lg-6 ">
             <div class="row gy-4">
